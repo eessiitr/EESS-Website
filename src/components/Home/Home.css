@@ -1,9 +1,13 @@
 .home_body{
-    height: 100vh;
+    height: 100%;
     width: auto;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
+}
+
+.updates{
+ margin-top: 10vh;
 }
