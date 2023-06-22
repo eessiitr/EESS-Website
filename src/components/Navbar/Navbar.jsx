@@ -62,7 +62,7 @@ export default function Navbar() {
               activeclassname="active"
             >
               <li>Intern</li>
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               onClick={LinkHandler}
@@ -71,7 +71,7 @@ export default function Navbar() {
               activeclassname="active"
             >
               <li>Academics</li>
-            </NavLink> */}
+            </NavLink>
           </ul>
         </nav>
         <Hamburger isOpen={isHamburgerOpen} onClick={HamburgerHandler} />
