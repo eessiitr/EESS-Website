@@ -70,7 +70,7 @@ export default function Acads_data({ year, semester }) {
                           (link, index) => (
                             <li key={index}>
                               {link ? (
-                                <a href={link}>{link}</a>
+                                <a href={link} target="_blank">{section}</a>
                               ) : (
                                 <span>Yet to be updated</span>
                               )}
