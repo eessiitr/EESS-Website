@@ -1,585 +1,290 @@
 const AcadsData = {
   Freshmen: {
     Autumn: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_autumn_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_autumn_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_autumn_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_autumn_course1",
-        },
+      "EEN - 101": {
+        Tutorials: ["http://bitly.ws/JkCy"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkCB"],
+        Notes: ["http://bitly.ws/JkCE"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_autumn_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_autumn_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_autumn_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_autumn_course2",
-        },
+      "EEN - 103": {
+        // Tutorials: [""],
+        Practicals: ["http://bitly.ws/JkCI"],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkCP"],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_autumn_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_autumn_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_autumn_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_autumn_course3",
-        },
+      "MAN - 001": {
+        Tutorials: ["http://bitly.ws/JkCV"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkCZ"],
+        Notes: ["http://bitly.ws/JkD9", "http://bitly.ws/JkDc"],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_autumn_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_autumn_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_autumn_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_autumn_course4",
-        },
+      "PHN - 003": {
+        Tutorials: ["http://bitly.ws/JkDd"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkDg"],
+        Notes: ["http://bitly.ws/JkDo"],
       },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_autumn_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_autumn_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_autumn_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_autumn_course5",
-        },
+      "CEN - 105": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkDt"],
+      },
+      "HSN - 001": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkDA"],
+      },
+      "HSN - 002": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkDI"],
+        Notes: ["http://bitly.ws/JkDS"],
       },
     },
     Spring: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+      "EEN - 102": {
+        Tutorials: ["http://bitly.ws/JkDY"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkE2"],
+        Notes: ["http://bitly.ws/JkE7"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+      "EEN - 104": {
+        Tutorials: ["http://bitly.ws/JkEb"],
+        Practicals: ["http://bitly.ws/JkEd"],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkEi"],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+      "EEN - 106": {
+        Tutorials: ["http://bitly.ws/JkEr"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkEx"],
+        // Notes: {""],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+      "MIN - 106": {
+        Tutorials: ["http://bitly.ws/JkEE"],
+        Practicals: ["http://bitly.ws/JkEK"],
+        Books: ["http://bitly.ws/JkEQ"],
+        Notes: ["http://bitly.ws/JkEV", "http://bitly.ws/JkF2"],
       },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+      "MAN - 002": {
+        Tutorials: ["http://bitly.ws/JkF5"],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkFq"],
+      },
+      "PHN - 004": {
+        Tutorials: ["http://bitly.ws/JkFt"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkFv"],
+        Notes: ["http://bitly.ws/JkFz", "http://bitly.ws/JkFD"],
       },
     },
   },
   Sophomores: {
     Autumn: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+      "EEN - 201": {
+        Tutorials: ["http://bitly.ws/JkFL"],
+        Practicals: ["http://bitly.ws/JkFS"],
+        Books: ["http://bitly.ws/JkFV"],
+        Notes: ["http://bitly.ws/JkFW"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+
+      "EEN - 203": {
+        Tutorials: ["http://bitly.ws/JkG2"],
+        Practicals: ["http://bitly.ws/JkG6"],
+        Books: ["http://bitly.ws/JkG7"],
+        Notes: ["http://bitly.ws/JkG8"],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+      "EEN - 205": {
+        Tutorials: ["http://bitly.ws/JkG9"],
+        Practicals: ["http://bitly.ws/JkGd"],
+        Books: ["http://bitly.ws/JkGg"],
+        Notes: ["http://bitly.ws/JkGj"],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+      "EEN - 291": {
+        Tutorials: ["http://bitly.ws/JkGq"],
+        Practicals: ["http://bitly.ws/JkGv", "http://bitly.ws/JkGy"],
+        Books: ["http://bitly.ws/JkGG"],
+        Notes: ["http://bitly.ws/JkGX", "http://bitly.ws/JkGP"],
       },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+      "MIN - 108": {
+        Tutorials: ["http://bitly.ws/JkH3"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkH9"],
+        Notes: ["http://bitly.ws/JkHb"],
+      },
+      "HSS - 001": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkHf"],
+        Notes: ["http://bitly.ws/JkHi"],
       },
     },
     Spring: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+      "EEN - 202": {
+        Tutorials: ["http://bitly.ws/JkHn"],
+        Practicals: ["http://bitly.ws/JkHq"],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkHs"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+      "EEN - 204": {
+        Tutorials: ["http://bitly.ws/JkHv"],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkHx"],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+      "EEN - 206": {
+        Tutorials: ["http://bitly.ws/JkHA"],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkHW"],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+      "EEN - 208": {
+        Tutorials: ["http://bitly.ws/JkHZ"],
+        Practicals: ["http://bitly.ws/JkI7"],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkIm"],
       },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+      "EEN - 211": {
+        Tutorials: ["http://bitly.ws/JkIr"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkIK"],
+        Notes: ["http://bitly.ws/JkIR"],
       },
     },
   },
   PreFinal: {
     Autumn: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+      "EEN - 301": {
+        // Tutorials: [""],
+        Practicals: ["http://bitly.ws/JkIU"],
+        Books: ["http://bitly.ws/JkIW"],
+        Notes: ["http://bitly.ws/JkIY"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+      "EEN - 303": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkJ2"],
+        // Notes: [""],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+      "EEN - 305": {
+        Tutorials: ["http://bitly.ws/JkJ3"],
+        Practicals: ["http://bitly.ws/JkJ7"],
+        Books: ["http://bitly.ws/JkJc"],
+        Notes: ["http://bitly.ws/JkJe"],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+      "EEN - 358": {
+        // Tutorials: [""],
+        Practicals: ["http://bitly.ws/JkJi"],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkJj"],
       },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+      "IMA - 301": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkJn"],
+        // Notes: [""],
       },
     },
     Spring: {
-      Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+      "EEN - 302": {
+        Tutorials: ["http://bitly.ws/JkJs"],
+        // Practicals: [""],
+        Books: ["http://bitly.ws/JkJu"],
+        Notes: ["http://bitly.ws/JkJy"],
       },
-      Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+      "EEN - 304": {
+        // Tutorials: [""],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkJD"],
       },
-      Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+      // "IBM - 312": {
+      //   Tutorials: [""],
+      //   Practicals: [""],
+      //   Books: ["http://bitly.ws/JkJM"],
+      //   Notes: [""],
+      // },
+      "CSN - 102": {
+        Tutorials: ["http://bitly.ws/JkJR"],
+        // Practicals: [""],
+        // Books: [""],
+        Notes: ["http://bitly.ws/JkJU"],
       },
-      Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
-      },
-      Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
-      },
+      // Course5: {
+      //   Tutorials: [""],
+      //   Practicals: [""],
+      //   Books: [""],
+      //   Notes: [""],
+      // },
     },
   },
   Final: {
     Autumn: {
       Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
     },
     Spring: {
       Course1: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course1",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course1",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course1",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course1",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course2: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course2",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course2",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course2",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course2",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course3: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course3",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course3",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course3",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course3",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course4: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course4",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course4",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course4",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course4",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
       Course5: {
-        Tutorials: {
-          link: "drive_link_tutorials_freshmen_spring_course5",
-        },
-        Practicals: {
-          link: "drive_link_practicals_freshmen_spring_course5",
-        },
-        Books: {
-          link: "drive_link_books_freshmen_spring_course5",
-        },
-        Notes: {
-          link: "drive_link_notes_freshmen_spring_course5",
-        },
+        Tutorials: [""],
+        Practicals: [""],
+        Books: [""],
+        Notes: [""],
       },
     },
   },

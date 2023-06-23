@@ -65,9 +65,19 @@ export default function Acads_data({ year, semester }) {
                   </div>
                   {isSectionExpanded(section) && (
                     <div className="section_details">
-                      <a href={AcadsData[year][semester][course][section].link}>
-                        Click Here
-                      </a>
+                      <ul>
+                        {AcadsData[year][semester][course][section].map(
+                          (link, index) => (
+                            <li key={index}>
+                              {link ? (
+                                <a href={link}>{link}</a>
+                              ) : (
+                                <span>Yet to be updated</span>
+                              )}
+                            </li>
+                          )
+                        )}
+                      </ul>
                     </div>
                   )}
                 </div>

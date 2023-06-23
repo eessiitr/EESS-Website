@@ -42,8 +42,17 @@
   font-weight: 400;
   font-size: 1.05em;
 }
-.section_details > a {
-  margin: 0 0 1em 5em;
+.section_details > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section_details > ul{
+  margin: 0 0 1em 2em;
+}
+
+.section_details > ul li::marker {
+  color: #ff8800;
 }
 
 @media (max-width: 800px) {
