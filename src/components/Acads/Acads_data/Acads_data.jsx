@@ -56,21 +56,13 @@ export default function Acads_data({ year, semester }) {
                     }`}
                     onClick={() => handleSectionClick(section)}
                   >
-                    <img
-                      src={RightArrow}
-                      alt="Expand"
-                      className={isSectionExpanded(section) ? "expanded" : ""}
-                    />
-                    {section}
-                  </div>
-                  {isSectionExpanded(section) && (
                     <div className="section_details">
                       <ul>
                         {AcadsData[year][semester][course][section].map(
                           (link, index) => (
                             <li key={index}>
                               {link ? (
-                                <a href={link} target="_blank">{section}</a>
+                                <a href={link} target="blank">{section}</a>
                               ) : (
                                 <span>Yet to be updated</span>
                               )}
@@ -79,7 +71,7 @@ export default function Acads_data({ year, semester }) {
                         )}
                       </ul>
                     </div>
-                  )}
+                  </div>
                 </div>
               ))}
             </div>
