@@ -17,7 +17,7 @@ const AcadsData = {
         Tutorials: ["http://bitly.ws/JkCV"],
         // Practicals: [""],
         Books: ["http://bitly.ws/JkCZ"],
-        Notes: ["http://bitly.ws/JkD9", "http://bitly.ws/JkDc"],
+        Notes: ["http://bitly.ws/JkD9"],
       },
       "PHN - 003": {
         Tutorials: ["http://bitly.ws/JkDd"],
@@ -67,7 +67,7 @@ const AcadsData = {
         Tutorials: ["http://bitly.ws/JkEE"],
         Practicals: ["http://bitly.ws/JkEK"],
         Books: ["http://bitly.ws/JkEQ"],
-        Notes: ["http://bitly.ws/JkEV", "http://bitly.ws/JkF2"],
+        Notes: ["http://bitly.ws/JkEV"],
       },
       "MAN - 002": {
         Tutorials: ["http://bitly.ws/JkF5"],
@@ -79,7 +79,7 @@ const AcadsData = {
         Tutorials: ["http://bitly.ws/JkFt"],
         // Practicals: [""],
         Books: ["http://bitly.ws/JkFv"],
-        Notes: ["http://bitly.ws/JkFz", "http://bitly.ws/JkFD"],
+        Notes: ["http://bitly.ws/JkFz"],
       },
     },
   },
@@ -106,9 +106,9 @@ const AcadsData = {
       },
       "EEN - 291": {
         Tutorials: ["http://bitly.ws/JkGq"],
-        Practicals: ["http://bitly.ws/JkGv", "http://bitly.ws/JkGy"],
+        Practicals: ["http://bitly.ws/JkGv"],
         Books: ["http://bitly.ws/JkGG"],
-        Notes: ["http://bitly.ws/JkGX", "http://bitly.ws/JkGP"],
+        Notes: ["http://bitly.ws/JkGX"],
       },
       "MIN - 108": {
         Tutorials: ["http://bitly.ws/JkH3"],
