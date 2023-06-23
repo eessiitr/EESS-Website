@@ -26,7 +26,7 @@
     margin: 0.5em 0;
 }
 .OurTeam_navbar__navMenu>.Link:hover {
-    background: rgba(40, 42, 39, 0.5);
+    /* background: rgba(40, 42, 39, 0.5); */
     border-radius: 0.5em;
 }
 .OurTeam_navbar__navMenu>.Link>li{
@@ -37,7 +37,7 @@
     height: 1.5em;
 }
 .OurTeam_navbar__navMenu>.active{
-    background: rgba(40, 42, 39, 0.5);
+    /* background: rgba(40, 42, 39, 0.5); */
     border-radius: 0.5em;
 }
 .OurTeam_navbar__navMenu>.active{
