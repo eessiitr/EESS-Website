@@ -1,0 +1,64 @@
+.Acads_navbar_body {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.8em;
+}
+.Acads_navbar_nav {
+  width: 70%;
+  padding: 2em 0;
+  margin: auto;
+}
+.Acads_navbar__navMenu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.Acads_navbar__navMenu > .Link {
+  display: flex;
+  align-items: center;
+  height: 2.2em;
+  font-size: 1.05em;
+  color: white;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  margin: 1em 2em;
+}
+.Acads_navbar__navMenu > .Link:hover {
+  background: rgba(40, 42, 39, 0.5);
+  border-radius: 0.5em;
+}
+.Acads_navbar__navMenu > .Link > li {
+  margin: 0 1em 0 1em;
+}
+.Acads_navbar__navMenu > .Link > svg {
+  margin-left: 1em;
+  height: 1.5em;
+}
+.Acads_navbar__navMenu > .active {
+  background: rgba(40, 42, 39, 0.5);
+  border-radius: 0.5em;
+}
+.Acads_navbar__navMenu > .active {
+  transition: all ease 0.5s;
+  color: #ff8800;
+}
+.Acads_navbar__navMenu > .active > svg > path {
+  fill: #ff8800;
+}
+.Acads_navbar__navMenu > .active > svg > g > path {
+  fill: #ff8800;
+}
+
+@media (max-width: 720px) {
+  .Acads_navbar__navMenu {
+    padding: 1em;
+    justify-content: center;
+  }
+
+  .Acads_navbar__navMenu > .Link {
+    margin: 0 0.5em;
+  }
+}
