@@ -55,7 +55,7 @@ export default function Navbar() {
               <li>Events</li>
             </NavLink>
 
-            {/* <NavLink
+            <NavLink
               onClick={LinkHandler}
               to="/Intern"
               className="Link"

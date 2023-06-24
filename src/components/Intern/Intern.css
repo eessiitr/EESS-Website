@@ -1,9 +1,5 @@
-.intern_body{
-    height: 100vh;
-    width: auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
+.intern_body {
+    position: relative;
+    padding-top: 5em;
+  }
+  
