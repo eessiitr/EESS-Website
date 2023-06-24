@@ -35,46 +35,15 @@
     justify-content: space-between;
     padding-left: 2em;
 }
-.Intern_content_text > .Intern_heading{
-    font-size: 1.5em;
-}
 .Intern_content_text > .Intern_descp{
     font-weight: 300;
 }
 .Intern_heading {
     font-size: 36px;
 }
-.menu-tab {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .menu-tab button {
-    color: #fff;
-    background-color: black;
-    border:none;
-    border-radius: 5px;
-    padding: 20px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    margin: 0 20px;
-  }
-  
-  .menu-tab button.active,
-  .menu-tab button:hover {
-
-    background-color: black;
-    color: #ff9800;
-    margin: 0 20px;
-    
-  }
   
 
 @media (max-width: 800px) {
-    .InternContainer{
-        width: 100vw;
-    }
     .Intern_card_container{
         padding: 0em;
     }
@@ -98,9 +67,6 @@
     .Intern_card_content{
         padding-left: 0em;
         padding-top: 1em;
-    }
-    .Intern_content_text > .Intern_heading{
-        font-size: 1.15em;
     }
     .Intern_content_text > .Intern_descp{
         display:none;

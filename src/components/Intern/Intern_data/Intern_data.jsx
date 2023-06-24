@@ -22,7 +22,6 @@ export default function Intern_data(prop) {
   const filteredItems = InternData.filter((item) => item.Category === prop.category);
 
   return (
-    <div className="InternContainer" id="Intern">
         <div className="Intern_card_container">
           {filteredItems.map((obj, idx) => {
             const expanded = isExpanded(idx);
@@ -33,13 +32,11 @@ export default function Intern_data(prop) {
                   <img src={obj.img} alt="" className="Intern_card_img" />
                 </div>
                 <div className="Intern_card_content">
-                  <div className="Intern_content_text">
                     <div className="Intern_descp">
                       {expanded
                         ? obj.description
                         : obj.description.substring(0, 400)}
                     </div>
-                  </div>
                   {obj.description.length > 220 && (
                     <ButtonAnimated
                       onClick={() => toggleExpansion(idx)}
@@ -52,7 +49,6 @@ export default function Intern_data(prop) {
             );
           })}
         </div>
-    </div>
   );
 }
 
