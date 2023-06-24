@@ -62,7 +62,7 @@ export default function Navbar() {
               activeclassname="active"
             >
               <li>Intern</li>
-            </NavLink> */}
+            </NavLink>
 
             <NavLink
               onClick={LinkHandler}
