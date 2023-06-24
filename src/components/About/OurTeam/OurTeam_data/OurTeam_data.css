@@ -26,15 +26,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
+    /* transition: 2.0s all ease-in-out; */
 }
 
 .img_container img {
-    transition: 0.5s all ease;
+    transition: 0.75s all ease;
     width: 180px;
     height: auto;
     max-width: 80%;
     aspect-ratio: 1;
-    border-radius: 50%;
+    border-radius: 5%;
     opacity: 1;
     backface-visibility: hidden;
     margin-bottom: 0.5em;
@@ -43,7 +45,8 @@
 .ourTeam__teamCard .img_container .img_hover_content {
     position: absolute;
     opacity: 0;
-    transition: 0.5s all ease-in-out;
+    transition: 0.75s all ease-in-out;
+
 }
 
 .img_hover_content div {
@@ -51,16 +54,25 @@
     font-size: small;
 }
 
-/* .img_container:hover img {
+.img_container:hover img {
     opacity: 0.2;
-} */
+    transform: rotateY(360deg);
+}
 
 .img_container:hover .img_hover_content {
     opacity: 1;
+
+}
+
+.img_hover_content{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
 }
 
 .ourTeam__memberPos {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 300;
     color: #ffffff;
 }
