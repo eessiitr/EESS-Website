@@ -10,13 +10,8 @@ export default function Home() {
     <div className="home_body">
       <LandingSection />
       <div className="Home_dep_image"></div>
-<<<<<<< HEAD
       <Updates/>
       <HomeCarousel/>
-=======
-      <HomeCarousel/>
-      <Updates/>
->>>>>>> 75b8358 (first commit)
     </div>
   );
 }

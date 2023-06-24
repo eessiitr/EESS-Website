@@ -1,13 +1,5 @@
-.intern_body{
-<<<<<<< HEAD
-    height: 100vh;
-=======
-    /* height: 100vh; */
->>>>>>> 75b8358 (first commit)
-    width: auto;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-}
+.intern_body {
+    position: relative;
+    padding-top: 5em;
+  }
+  

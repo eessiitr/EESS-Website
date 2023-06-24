@@ -55,11 +55,7 @@ export default function Navbar() {
               <li>Events</li>
             </NavLink>
 
-<<<<<<< HEAD
-            {/* <NavLink
-=======
             <NavLink
->>>>>>> 75b8358 (first commit)
               onClick={LinkHandler}
               to="/Intern"
               className="Link"
@@ -75,11 +71,7 @@ export default function Navbar() {
               activeclassname="active"
             >
               <li>Academics</li>
-<<<<<<< HEAD
-            </NavLink> */}
-=======
             </NavLink>
->>>>>>> 75b8358 (first commit)
           </ul>
         </nav>
         <Hamburger isOpen={isHamburgerOpen} onClick={HamburgerHandler} />

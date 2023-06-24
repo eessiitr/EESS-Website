@@ -1,25 +1,20 @@
-<<<<<<< HEAD
-import React from 'react'
-import './Intern.css'
-export default function Intern() {
-  return (
-    <div className='intern_body'>this is Intern <br/>
-        lmaooooo <br/>
-        iske design ki tarah intern bhi...... 
-    </div>
-  )
-=======
-import React from 'react';
-import './Intern.css';
-import "bootstrap/dist/css/bootstrap.min.css";
-import CardsBS from './Cards/CardsBS';
-
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import "./Intern.css";
+import InternPage from "./InternPage/InternPage";
+import Heading from "../UI/Heading/Heading"
 
 export default function Intern() {
   return (
-    <div className='intern_body'>
-      <CardsBS/>
+    <div className="intern_body">
+    <Heading name="Intern Diaries" />
+      <Routes>
+      <Route
+          path="/"
+          element={<Navigate to="/Intern/Intern" replace />}
+        />
+        <Route path={"/:category"} element={<InternPage />} />
+      </Routes>
     </div>
   );
->>>>>>> 75b8358 (first commit)
 }
