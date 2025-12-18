@@ -1,6 +1,6 @@
 import React from 'react'
 import './OurTeam_data.css';
-import OurTeamData from "./OurTeamData.js";
+import OurTeamData from "./OurTeamData.jsx";
 import Insta_Icon from '../../../../Assets/OurTeam_imgs/OurTeam_icons/Insta_icon';
 import Linkedin_Icon from '../../../../Assets/OurTeam_imgs/OurTeam_icons/Linkedin_icon';
 import Mail_Icon from '../../../../Assets/OurTeam_imgs/OurTeam_icons/Mail_icon';

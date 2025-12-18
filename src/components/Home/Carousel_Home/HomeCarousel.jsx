@@ -6,7 +6,7 @@ import LeftArrow from "../../../Assets/Icons/LeftArrow.svg";
 import RightArrow from "../../../Assets/Icons/RightArrow.svg";
 import ButtonAnimate from "../../UI/Button_animated/ButtonAnimate";
 
-import HomeCarouselContent from "./CarouselData.js";
+import HomeCarouselContent from "./CarouselData.jsx";
 
 export default function HomeCarousel() {
   const n = HomeCarouselContent.length;
