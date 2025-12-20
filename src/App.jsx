@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/eess">
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Navbar />}>

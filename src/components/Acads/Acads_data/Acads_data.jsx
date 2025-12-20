@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Acads_data.css";
-import AcadsData from "./AcadsData.js";
+import AcadsData from "./AcadsData.jsx";
 import RightArrow from "../../../Assets/Icons/YellowRightArrow.svg";
 
 export default function Acads_data({ year, semester }) {
