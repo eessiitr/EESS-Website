@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EESS Website</title>
+  <script>
+    // This script takes the current URL (which is a 404 page) and 
+    // redirects to the index.html page with the URL path as a query parameter.
+    // This allows single page apps to handle the routing on the client side.
+    
+    var pathSegments = window.location.pathname.split('/').filter(function(segment) {
+      return segment !== '';
+    });
+    
+    // Remove 'eess' from the path if it's the first segment (base path)
+    if (pathSegments[0] === 'eess') {
+      pathSegments.shift();
+    }
+    
+    var route = '/' + pathSegments.join('/');
+    var search = window.location.search;
+    
+    // Store the route in sessionStorage to be retrieved by the app
+    sessionStorage.setItem('redirectPath', route + search);
+    
+    // Redirect to the base URL
+    window.location.replace('/eess/');
+  </script>
+</head>
+<body>
+  <!-- This page is displayed briefly while redirecting -->
+</body>
+</html>

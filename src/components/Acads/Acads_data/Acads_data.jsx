@@ -1,11 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Acads_data.css";
-import AcadsData from "./AcadsData.jsx";
+import AcadsDataStatic from "./AcadsData.jsx";
 import RightArrow from "../../../Assets/Icons/YellowRightArrow.svg";
+import SheetsService from "../../../services/sheetsService";
 
 export default function Acads_data({ year, semester }) {
+  const [acadsData, setAcadsData] = useState(AcadsDataStatic);
+  const [loading, setLoading] = useState(true);
   const [expandedCourses, setExpandedCourses] = useState([]);
   const [expandedSections, setExpandedSections] = useState([]);
+
+  useEffect(() => {
+    const loadAcademics = async () => {
+      try {
+        const sheetsData = await SheetsService.fetchAcademics();
+        if (sheetsData && Object.keys(sheetsData).length > 0) {
+          setAcadsData(sheetsData);
+        }
+      } catch (error) {
+        console.error('Error loading academics data:', error);
+        // Fallback to static data (already set in useState)
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadAcademics();
+  }, []);
 
   const handleCourseClick = (course) => {
     if (isCourseExpanded(course)) {
@@ -31,9 +52,25 @@ export default function Acads_data({ year, semester }) {
     return expandedSections.includes(section);
   };
 
+  if (loading) {
+    return (
+      <div className="Acads_card_container" style={{ textAlign: 'center', padding: '2rem' }}>
+        <p>Loading academic data...</p>
+      </div>
+    );
+  }
+
+  if (!acadsData[year] || !acadsData[year][semester]) {
+    return (
+      <div className="Acads_card_container" style={{ textAlign: 'center', padding: '2rem' }}>
+        <p>No data available for {year} - {semester}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="Acads_card_container">
-      {Object.keys(AcadsData[year][semester]).map((course) => (
+      {Object.keys(acadsData[year][semester]).map((course) => (
         <div key={course} className="Acads_card">
           <div
             className={`course ${isCourseExpanded(course) ? "expanded" : ""}`}
@@ -48,17 +85,16 @@ export default function Acads_data({ year, semester }) {
           </div>
           {isCourseExpanded(course) && (
             <div className="course_materials_container">
-              {Object.keys(AcadsData[year][semester][course]).map((section) => (
+              {Object.keys(acadsData[year][semester][course]).map((section) => (
                 <div key={section} className="course_materials">
                   <div
-                    className={`section ${
-                      isSectionExpanded(section) ? "expanded" : ""
-                    }`}
+                    className={`section ${isSectionExpanded(section) ? "expanded" : ""
+                      }`}
                     onClick={() => handleSectionClick(section)}
                   >
                     <div className="section_details">
                       <ul>
-                        {AcadsData[year][semester][course][section].map(
+                        {acadsData[year][semester][course][section].map(
                           (link, index) => (
                             <li key={index}>
                               {link ? (
