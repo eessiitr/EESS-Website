@@ -2,37 +2,32 @@
   position: relative;
   width: 100vw;
   height: calc(100vh - 60px);
-  padding: 0 1em;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.Event_Heading {
-  margin-bottom: 3em;
-  font-size: 1.25rem;
-  font-weight: normal;
-  text-align: center;
+  font-size: 16px;
 }
 
 .EventCarousel_container {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .CardCarousel_container {
   position: relative;
-  width: 90%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 1em;
 }
 
 .EventCarousel_card {
@@ -40,101 +35,89 @@
   background: linear-gradient(124.29deg,
             #282A27B2 54.99%,
             rgba(39, 41, 38, 0.18) 89.22%);
-  width: 50%;
-  aspect-ratio: 5/3;
+  width: 100%;
+  height: 100%;
   border-radius: 0.75em;
-  transition: all 500ms linear;
-   transition-property: transform;
+  transition: opacity 4s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #000;
   overflow: hidden;
+  opacity: 0;
 }
 
 .EventCarousel_card>img{
   z-index: 1;
   width: 100%;
-  aspect-ratio: 5/3;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0.75em;
+}
+
+.EventCarousel_description_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), transparent);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.EventCarousel_description_text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .EventCarousel_card.active {
   position: relative;
-  transform: scale(1);
+  opacity: 1;
   z-index: 2;
-}
-
-.EventCarousel_card.prevImg1 {
-  transform: translateX(-50%) scale(0.6);
-  z-index: 1;
-}
-
-.EventCarousel_card.prevImg2 {
-  transform: translateX(50%) scale(0.6);
-   z-index: 0;
-}
-
-.EventCarousel_card.nextImg1 {
-  transform: translateX(50%) scale(0.6);
-  z-index: 0;
-}
-
-.EventCarousel_card.nextImg2 {
-  transform: translateX(-50%) scale(0.6);
-  z-index: 1;
 }
 
 .carousel_control_button {
   background-color: transparent;
   border: none;
-  z-index: 2;
-}
-
-.EventCarousel_SlideButton {
-  position: relative;
-  width: 100%;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.5rem;
-}
-.EventCarousel_SlideButton > .SlideBtn {
-  width: 10px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  border: 2px solid #ffa401;
-  background-color: transparent;
+  z-index: 3;
   cursor: pointer;
-}
-.EventCarousel_SlideButton > .SlideBtn.active {
-  background-color: #ffa401;
+  padding: 1rem;
 }
 
-.Events_ReadMore {
-  position: absolute;
-  left: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Events_ReadMore > a > img {
-  background-color: transparent;
-  border: none;
-  z-index: 2;
-  transform: rotate(90deg);
+.carousel_control_button img {
+  width: 2rem;
+  height: 2rem;
 }
 
-@media (max-width: 746px) {
-  .Event_Heading {
-    font-size: 1rem;
+
+@media (max-width: 768px) {
+  .EventCarousel_mainContainer {
+    font-size: 14px;
+  }
+  .EventCarousel_description_text {
+    font-size: 1.25rem;
   }
   .EventCarousel_card {
     position: absolute;
-    width: 90% !important;
+    width: 100% !important;
     transform: translateX(0%) scale(1) !important;
+  }
+  .EventCarousel_card.prevImg1,
+  .EventCarousel_card.prevImg2,
+  .EventCarousel_card.nextImg1,
+  .EventCarousel_card.nextImg2 {
+    display: none;
+  }
+}
+
+@media (max-width: 456px) {
+  .EventCarousel_mainContainer {
+    font-size: 12px;
+  }
+  .EventCarousel_description_text {
+    font-size: 1rem;
   }
 }

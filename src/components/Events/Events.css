@@ -4,3 +4,28 @@
   background-color: black;
   padding: 60px 0;
 }
+
+.events_body_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .events_body_cards {
+    gap: 1.5rem;
+    padding: 1.5rem 3%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 456px) {
+  .events_body_cards {
+    gap: 1rem;
+    padding: 1rem 2%;
+    font-size: 12px;
+  }
+}
