@@ -1,15 +1,74 @@
+/* Floating Back to Top Button */
+.floating-backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.floating-backToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.floating-backToTop:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.floating-backToTop:active {
+    transform: translateY(-2px);
+}
+
+.floating-backToTop .backToTopImg {
+    height: 1.8em;
+    filter: brightness(0) invert(1);
+}
+
 .home_body{
     padding-top: 60px;
     width: auto;
     color: white;
     background-color: black;
 }
-.home_body>.Home_dep_image{
-    background-image: url('../../Assets/img_home/dep_image_Home.jpg');
-    background-attachment: fixed;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    width: auto;
+
+@media (max-width:768px) {
+    .floating-backToTop {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-backToTop .backToTopImg {
+        height: 1.5em;
+    }
+}
+
+@media (max-width: 450px) {
+    .floating-backToTop {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
 }

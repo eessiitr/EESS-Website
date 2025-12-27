@@ -5,7 +5,6 @@ export default function Heading(props) {
     <>
       <div className="heading_name">
         {props.name}
-        <div className="heading_decor"></div>
       </div>
     </>
   );
