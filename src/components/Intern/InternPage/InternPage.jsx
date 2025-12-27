@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./InternPage.css";
 import InternData from '../Intern_data/Intern_data'
 import Projects from '../Projects/Projects'
+import Resources from "../Resources/Resources";
 import GlassContainer from "../../UI/GlassContainer/GlassContainer";
 import { useParams, NavLink, Outlet, useLocation, Routes, Route } from "react-router-dom";
 

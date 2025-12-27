@@ -1,0 +1,42 @@
+.Resources_container {
+  color: white;
+  padding: 1rem;
+}
+
+.Resources_title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffa401;
+}
+
+.Resources_content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .Resources_container {
+    font-size: 14px;
+  }
+  .Resources_title {
+    font-size: 1.75rem;
+  }
+  .Resources_content {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 456px) {
+  .Resources_container {
+    font-size: 12px;
+  }
+  .Resources_title {
+    font-size: 1.5rem;
+  }
+  .Resources_content {
+    font-size: 0.75rem;
+  }
+}
+
