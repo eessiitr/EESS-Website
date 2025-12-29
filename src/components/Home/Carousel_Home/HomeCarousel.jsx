@@ -5,6 +5,7 @@ import "./HomeCarousel.css";
 import LeftArrow from "../../../Assets/Icons/LeftArrow.svg";
 import RightArrow from "../../../Assets/Icons/RightArrow.svg";
 import ButtonAnimate from "../../UI/Button_animated/ButtonAnimate";
+import Heading from "../../UI/Heading/Heading";
 
 import HomeCarouselContent from "./CarouselData.jsx";
 
@@ -21,39 +22,42 @@ export default function HomeCarousel() {
   };
   return (
     <>
-      <div className="Carousel_body">
-        <img src={LeftArrow} alt="" onClick={prevSlide} className="leftArrow" />
-        <div className="AllSlides_container">
-          {HomeCarouselContent.map((obj, indx) => {
-            return (
-              <div key={indx} className="Carousel_AllSlides">
-                {indx === SlideNo && (
-                  <div className="Carousel_CurrSlide">
-                    <img src={obj.img} alt="" />
-                    <div className="CurrSlide_content">
-                      <h4 className="Carousel_heading">{obj.heading}</h4>
-                      <div className="Carousel_descp">{obj.description}</div>
-                      <ButtonAnimate text="Watch Live" link={obj.ytlink} />
+      <div className="Spotlight_container">
+        <Heading name="Spotlight" />
+        <div className="Carousel_body">
+          <img src={LeftArrow} alt="" onClick={prevSlide} className="leftArrow" />
+          <div className="AllSlides_container">
+            {HomeCarouselContent.map((obj, indx) => {
+              return (
+                <div key={indx} className="Carousel_AllSlides">
+                  {indx === SlideNo && (
+                    <div className="Carousel_CurrSlide">
+                      <img src={obj.img} alt="" />
+                      <div className="CurrSlide_content">
+                        <h4 className="Carousel_heading">{obj.heading}</h4>
+                        <div className="Carousel_descp">{obj.description}</div>
+                        <ButtonAnimate text="Watch Live" link={obj.ytlink} />
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <img
+            src={RightArrow}
+            alt=""
+            onClick={nextSlide}
+            className="rightArrow"
+          />
         </div>
-        <img
-          src={RightArrow}
-          alt=""
-          onClick={nextSlide}
-          className="rightArrow"
-        />
       </div>
       <div className="Home_SlideButton">
         {HomeCarouselContent.map((ele, idx) => {
           return (
             <div
               key={idx}
-              className={`SlideBtn${SlideNo=== idx ? " active" : ""}`}
+              className={`SlideBtn${SlideNo === idx ? " active" : ""}`}
               onClick={() => setSlideNo(idx)}
             />
           );

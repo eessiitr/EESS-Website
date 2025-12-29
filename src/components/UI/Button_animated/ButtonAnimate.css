@@ -1,12 +1,14 @@
 .ButtonAnimated {
     margin-top: 0.8em;
-    padding: 0.3em;
+    padding: 0.5em 1em;
     width: 10em;
-    background-color: #ff8800;
+    background-color: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     border-radius: 8px;
     text-align: center;
-    color: black;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .ButtonAnimated>span {
@@ -24,6 +26,12 @@
     transition: all 0.5s ease;
 }
 
+.ButtonAnimated:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
 .ButtonAnimated:hover span {
     padding-right: 0.8em;
 }
@@ -31,8 +39,4 @@
 .ButtonAnimated:hover span:after {
     opacity: 1;
     right: 0;
-}
-
-.ButtonAnimated:hover {
-    color: black;
 }

@@ -9,7 +9,6 @@ import youtube from "../../Assets/img/youtube.png";
 import linkedin from "../../Assets/img/linkedin.png";
 import logo from "../../Assets/img/logo.png";
 import line from "../../Assets/img/line.png";
-import upArrow from "../../Assets/img/upArrow.png";
 
 function Footer() {
   return (
@@ -34,16 +33,9 @@ function Footer() {
                 </div>
               </div>
 
-              <div className="col-6 col-lg-6 d-flex justify-content-end">
-                <div className="column text-center">
-                  <div>
-                    <button onClick={topFunction} id="btn-backToTop">
-                      <img className="m-0 backToTopImg" src={upArrow} alt="" />
-                    </button>
-                  </div>
-                  <div>
-                    <h6 className="backToTop m-1">BACK TO TOP</h6>
-                  </div>
+              <div className="col-6 col-lg-6 d-flex justify-content-end align-items-center">
+                <div className="footer-tagline">
+                  <p className="m-0">Empowering Innovation, Enlightening Minds</p>
                 </div>
               </div>
             </div>
@@ -143,7 +135,7 @@ function Footer() {
 
               <div className="mt-0">
                 <p className="copyright-text text-center w-100">
-                  &copy; Copyright 2022, Electrical Engineering Students’
+                  &copy; Copyright 2022, Electrical Engineering Students'
                   Society, IIT Roorkee. All rights reserved.
                 </p>
               </div>
@@ -153,12 +145,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 }
 
 export default Footer;
