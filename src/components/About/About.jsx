@@ -10,12 +10,12 @@ export default function About() {
   return (
     <div className="about_body">
       <WhoWeAre />
-      <div className="dep_image"></div>
-      <Gallery />
+      <div className="dep_image" ></div>
       <Routes>
         <Route path={"/"} element={<OurTeam />} />
         <Route path={"/:vertical"} element={<OurTeam />} />
       </Routes>
+      <Gallery />
     </div>
   );
 }
