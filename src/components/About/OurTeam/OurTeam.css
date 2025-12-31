@@ -1,11 +1,338 @@
-.OurTeam_body{
-    padding-top: 4em;
+:root {
+  --primary-orange: #ff8800;
+  --dark-bg: #000000;
+  --card-bg: #282a27;
+  --gradient-start: #ff8800;
+  --gradient-end: #ff4400;
+  --team-spacing: 4rem;
 }
-.OurTeam_dashboard{
-    margin: auto;
-    margin-top: 1em;
-    width: 90vw;
-    background: linear-gradient(104.45deg, #282A27 0%, #282A27 0.01%, #000000 100%);
-    border-radius: 0.8em;
-    display: flex;
+
+.OurTeam_body {
+  padding: var(--team-spacing) 2rem;
+  position: relative;
+  min-height: 100vh;
+  animation: fadeInUp 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.OurTeam_body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 136, 0, 0.05) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 136, 0, 0.05) 0%,
+      transparent 30%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.OurTeam_dashboard {
+  margin: 2rem auto;
+  width: 90vw;
+  max-width: 1400px;
+  background: linear-gradient(
+    135deg,
+    rgba(40, 42, 39, 0.95) 0%,
+    rgba(0, 0, 0, 0.98) 100%
+  );
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 136, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideIn 0.6s ease-out 0.2s both;
+  z-index: 1;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.OurTeam_dashboard > *:first-child {
+  border-right: 1px solid rgba(255, 136, 0, 0.2);
+  padding-right: 2rem;
+}
+
+.OurTeam_dashboard > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-content: start;
+}
+
+.OurTeam_dashboard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 136, 0, 0.3),
+    0 0 40px rgba(255, 136, 0, 0.1);
+}
+
+.OurTeam_dashboard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-top: 3px solid var(--primary-orange);
+  border-left: 3px solid var(--primary-orange);
+  border-radius: 1.5rem 0 0 0;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.OurTeam_dashboard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-bottom: 3px solid var(--primary-orange);
+  border-right: 3px solid var(--primary-orange);
+  border-radius: 0 0 1.5rem 0;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.OurTeam_dashboard:hover::before,
+.OurTeam_dashboard:hover::after {
+  width: 120px;
+  height: 120px;
+  opacity: 1;
+}
+
+.OurTeam_dashboard {
+  background-image: linear-gradient(
+      135deg,
+      rgba(40, 42, 39, 0.95) 0%,
+      rgba(0, 0, 0, 0.98) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 136, 0, 0.02) 2px,
+      rgba(255, 136, 0, 0.02) 4px
+    );
+}
+
+.OurTeam_dashboard {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 136, 0, 0.1), inset 0 -1px 0 rgba(255, 136, 0, 0.05);
+}
+
+@media (max-width: 1200px) {
+  .OurTeam_dashboard {
+    grid-template-columns: 240px 1fr;
+    gap: 2.5rem;
+  }
+
+  .OurTeam_dashboard > *:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --team-spacing: 3rem;
+  }
+
+  .OurTeam_body {
+    padding: var(--team-spacing) 1.5rem;
+  }
+
+  .OurTeam_dashboard {
+    width: 92vw;
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+    gap: 2rem;
+    border-radius: 1.2rem;
+  }
+
+  .OurTeam_dashboard > *:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 136, 0, 0.2);
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+
+  .OurTeam_dashboard > *:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .OurTeam_dashboard::before,
+  .OurTeam_dashboard::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .OurTeam_dashboard:hover::before,
+  .OurTeam_dashboard:hover::after {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --team-spacing: 2.5rem;
+  }
+
+  .OurTeam_body {
+    padding: var(--team-spacing) 1rem;
+  }
+
+  .OurTeam_dashboard {
+    width: 95vw;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .OurTeam_dashboard > *:first-child {
+    padding-bottom: 1.5rem;
+  }
+
+  .OurTeam_dashboard > *:last-child {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .OurTeam_dashboard::before,
+  .OurTeam_dashboard::after {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+  }
+
+  .OurTeam_dashboard:hover::before,
+  .OurTeam_dashboard:hover::after {
+    width: 70px;
+    height: 70px;
+  }
+
+  .OurTeam_dashboard:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --team-spacing: 2rem;
+  }
+
+  .OurTeam_body {
+    padding: var(--team-spacing) 0.75rem;
+  }
+
+  .OurTeam_dashboard {
+    width: 96vw;
+    padding: 1.5rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    margin: 1rem auto;
+  }
+
+  .OurTeam_dashboard > *:first-child {
+    padding-bottom: 1rem;
+  }
+
+  .OurTeam_dashboard > *:last-child {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .OurTeam_dashboard::before {
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
+
+  .OurTeam_dashboard::after {
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
+
+  .OurTeam_dashboard:hover::before,
+  .OurTeam_dashboard:hover::after {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .OurTeam_body,
+  .OurTeam_dashboard,
+  .OurTeam_dashboard::before,
+  .OurTeam_dashboard::after {
+    animation: none;
+    transition: none;
+  }
+
+  .OurTeam_dashboard:hover {
+    transform: none;
+  }
+
+  .OurTeam_dashboard:hover::before,
+  .OurTeam_dashboard:hover::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .OurTeam_dashboard {
+    border: 2px solid var(--primary-orange);
+    box-shadow: 0 10px 30px rgba(255, 136, 0, 0.3);
+  }
+
+  .OurTeam_dashboard::before,
+  .OurTeam_dashboard::after {
+    opacity: 1;
+    border-width: 3px;
+  }
+
+  .OurTeam_dashboard > *:first-child {
+    border-right-width: 2px;
+  }
 }

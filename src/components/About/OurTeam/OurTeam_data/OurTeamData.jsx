@@ -37,18 +37,18 @@ import f2 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/Faculty/F2.jpg";
 const OurTeamData = {
     Secretaries : [
         {
-            name: "Vaibhav Gupta",
+            name: "Anushree Gupta",
             position: "Secretary",
             img: secy,
-            mail: "mailto:hardik@ee.iitr.ac.in",
+            mail: "mailto:anushree_g@ee.iitr.ac.in",
             linkedin:"",
             insta:"",
         },
         {
-            name: "Anuj Popli",
+            name: "Aryan Kesarwani",
             position: "Additional Secy",
             img: AddSecy,
-            mail: "",
+            mail: "mailto:aryan_k@ee.iitr.ac.in",
             linkedin:"",
             insta:"",
         },
@@ -61,7 +61,7 @@ const OurTeamData = {
             insta:"",
         },
         {
-            name: "Varun Gupta",
+            name: "Arjav Jain",
             position: "Operations Secy",
             img: OpSecy,
             mail: "",
@@ -87,7 +87,7 @@ const OurTeamData = {
     ],
     Development : [
         {
-            name: "Piyush Chittora",
+            name: "Ashi Gupta",
             position: "",
             img: dv1,
             mail: "",
