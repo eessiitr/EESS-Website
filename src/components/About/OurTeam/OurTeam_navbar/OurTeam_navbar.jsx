@@ -5,10 +5,7 @@ import "./OurTeam_navbar.css";
 
 //image imports
 import SecretaryIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Secretary_icon";
-import DesignIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Design_icon";
-import MediaIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Media_icon";
-import EditorialIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Editorial_icon";
-import OperationsIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Operations_icon";
+
 import FacultyIcon from "../../../../Assets/OurTeam_imgs/OurTeam_icons/Faculty_icon";
 
 export default function OurTeam_navbar({ IsOnAbout }) {
@@ -17,40 +14,24 @@ export default function OurTeam_navbar({ IsOnAbout }) {
       <nav className="OurTeam_navbar_nav">
         <ul className="OurTeam_navbar__navMenu">
           <NavLink
-            to="/About/Secretaries"
+            to="/About/2025"
             className={`Link ${IsOnAbout ? "active" : ""}`}
             activeclassname="active"
           >
             <SecretaryIcon />
-            <li>Secretaries</li>
+            <li>2025-26</li>
           </NavLink>
           <NavLink
-            to="/About/Development"
+            to="/About/2024"
             className="Link"
             activeclassname="active"
           >
-            <MediaIcon />
-            <li>Development</li>
+            <SecretaryIcon />
+            <li>2024-25</li>
           </NavLink>
-          <NavLink to="/About/Design" className="Link" activeclassname="active">
-            <DesignIcon />
-            <li>Design</li>
-          </NavLink>
-          <NavLink
-            to="/About/Editorial"
-            className="Link"
-            activeclassname="active"
-          >
-            <EditorialIcon />
-            <li>Editorial</li>
-          </NavLink>
-          <NavLink
-            to="/About/Operations"
-            className="Link"
-            activeclassname="active"
-          >
-            <OperationsIcon />
-            <li>Operation</li>
+          <NavLink to="/About/2023" className="Link" activeclassname="active">
+            <SecretaryIcon />
+            <li>2023-24</li>
           </NavLink>
           <NavLink
             to="/About/Faculty"

@@ -13,7 +13,7 @@ export default function OurTeam() {
       <Heading name="OurTeam" />
       <div className="OurTeam_dashboard">
         <OurTeamNavbar IsOnAbout={vertical ? false : true} />
-        <OurTeamData team={vertical ? vertical : "Secretaries"} />
+        <OurTeamData team={vertical ? vertical : "2025"} />
       </div>
     </div>
   );
