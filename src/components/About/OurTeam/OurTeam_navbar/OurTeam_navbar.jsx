@@ -14,8 +14,16 @@ export default function OurTeam_navbar({ IsOnAbout }) {
       <nav className="OurTeam_navbar_nav">
         <ul className="OurTeam_navbar__navMenu">
           <NavLink
-            to="/About/2025"
+            to="/About/2026"
             className={`Link ${IsOnAbout ? "active" : ""}`}
+            activeclassname="active"
+          >
+            <SecretaryIcon />
+            <li>2026-27</li>
+          </NavLink>
+          <NavLink
+            to="/About/2025"
+            className="Link"
             activeclassname="active"
           >
             <SecretaryIcon />

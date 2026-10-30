@@ -1,4 +1,13 @@
 //Image Import
+import s6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/s.jpg";
+import as6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/as.jpg";
+import jso6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jso.jpg";
+import jso26 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jso2.jpg";
+import jse6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jse.jpg";
+import jswd6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jswd.jpg";
+import jsm6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jsm.jpg";
+import jsd6 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2026/jsd.jpg";
+
 import s5 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2025/s.jpg";
 import as5 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2025/as.jpg";
 import jso5 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/2025/jso.jpg";
@@ -19,6 +28,65 @@ import f1 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/Faculty/F1.jpg";
 import f2 from "../../../../Assets/OurTeam_imgs/OurTeam_photos/Faculty/F2.jpg";
 
 const OurTeamData = {
+    2026 : [
+        {
+            name: "Abhinav Sharma",
+            position: "Secretary",
+            img: s6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Saksham Sureka",
+            position: "Additional Secretary",
+            img: as6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Keshav Bansal",
+            position: "Joint Secretary Operations",
+            img: jso6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Pulkit Goyal",
+            position: "Joint Secretary Operations",
+            img: jso26,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Vrinda Gupta",
+            position: "Joint Secretary Editorial",
+            img: jse6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Somye Mahajan",
+            position: "Joint Secretary Web Development",
+            img: jswd6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Rishit Barala",
+            position: "Joint Secretary Multimedia",
+            img: jsm6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        },{
+            name: "Sakshi",
+            position: "Joint Secretary Design",
+            img: jsd6,
+            mail: "",
+            linkedin:"",
+            insta:"",
+        }
+    ],
     2025 : [
         {
             name: "Anushree Gupta",
@@ -127,7 +195,7 @@ const OurTeamData = {
     ],
     Faculty : [
         {
-            name: "Premlata Jena",
+            name: "Asha Sharma",
             position: "Head",
             img: f1,
             mail: "",
@@ -135,7 +203,7 @@ const OurTeamData = {
             insta:"",
         },
         {
-            name: "Apurv kr. Yadav",
+            name: "Satish Belkhode",
             position: "Asst. Head",
             img: f2,
             mail: "",
